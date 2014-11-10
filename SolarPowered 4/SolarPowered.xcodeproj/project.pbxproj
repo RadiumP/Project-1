@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A57075111A09A7D400CE2C22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A57075101A09A7D400CE2C22 /* main.m */; };
+		A570751F1A09A7D400CE2C22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A570751D1A09A7D400CE2C22 /* LaunchScreen.xib */; };
+		A570752B1A09A7D400CE2C22 /* SolarPoweredTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A570752A1A09A7D400CE2C22 /* SolarPoweredTests.m */; };
+		A57075381A09A7FA00CE2C22 /* APIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A57075351A09A7FA00CE2C22 /* APIModel.m */; };
+		A57075391A09A7FA00CE2C22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A57075371A09A7FA00CE2C22 /* AppDelegate.m */; };
+		A570753E1A09A80B00CE2C22 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A570753B1A09A80B00CE2C22 /* Bolts.framework */; };
+		A570753F1A09A80B00CE2C22 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A570753C1A09A80B00CE2C22 /* Parse.framework */; };
+		A57075401A09A80B00CE2C22 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A570753D1A09A80B00CE2C22 /* ParseFacebookUtils.framework */; };
+		A57075461A09A81200CE2C22 /* resultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57075421A09A81200CE2C22 /* resultViewController.m */; };
+		A57075471A09A81200CE2C22 /* solarData.m in Sources */ = {isa = PBXBuildFile; fileRef = A57075431A09A81200CE2C22 /* solarData.m */; };
+		A57075481A09A81200CE2C22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57075451A09A81200CE2C22 /* ViewController.m */; };
+		A570754A1A09A82400CE2C22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57075491A09A82400CE2C22 /* Main.storyboard */; };
+		A570754C1A09A89800CE2C22 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A570754B1A09A89800CE2C22 /* Accounts.framework */; };
+		A570754E1A09A89E00CE2C22 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A570754D1A09A89E00CE2C22 /* CFNetwork.framework */; };
+		A57075501A09A8A500CE2C22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A570754F1A09A8A500CE2C22 /* CoreGraphics.framework */; };
+		A57075521A09A8AC00CE2C22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57075511A09A8AC00CE2C22 /* CoreLocation.framework */; };
+		A57075541A09A8B800CE2C22 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A57075531A09A8B800CE2C22 /* libz.dylib */; };
+		A57075561A09A8C200CE2C22 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57075551A09A8C200CE2C22 /* MobileCoreServices.framework */; };
+		A57075581A09A8C900CE2C22 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57075571A09A8C900CE2C22 /* QuartzCore.framework */; };
+		A570755A1A09A8D000CE2C22 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57075591A09A8D000CE2C22 /* Security.framework */; };
+		A570755C1A09A8D600CE2C22 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A570755B1A09A8D600CE2C22 /* StoreKit.framework */; };
+		A570755E1A09A90400CE2C22 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A570755D1A09A90400CE2C22 /* SystemConfiguration.framework */; };
+		A57075601A09A90D00CE2C22 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A570755F1A09A90D00CE2C22 /* Social.framework */; };
+		D96824081A0B510100EBCAF3 /* solar-panels1.png in Resources */ = {isa = PBXBuildFile; fileRef = D96824071A0B510100EBCAF3 /* solar-panels1.png */; };
+		D968240A1A0B518200EBCAF3 /* solar-panel.png in Resources */ = {isa = PBXBuildFile; fileRef = D96824091A0B518200EBCAF3 /* solar-panel.png */; };
+		D968240C1A0B51BD00EBCAF3 /* solar-panel2.png in Resources */ = {isa = PBXBuildFile; fileRef = D968240B1A0B51BD00EBCAF3 /* solar-panel2.png */; };
+		D968240E1A0B51F800EBCAF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D968240D1A0B51F800EBCAF3 /* Images.xcassets */; };
+		D96824111A0B525100EBCAF3 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D968240F1A0B525100EBCAF3 /* 3.png */; };
+		D96824121A0B525100EBCAF3 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D96824101A0B525100EBCAF3 /* 1.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A57075251A09A7D400CE2C22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A57075031A09A7D400CE2C22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A570750A1A09A7D400CE2C22;
+			remoteInfo = SolarPowered;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A570750B1A09A7D400CE2C22 /* SolarPowered.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarPowered.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A570750F1A09A7D400CE2C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A57075101A09A7D400CE2C22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A570751E1A09A7D400CE2C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A57075241A09A7D400CE2C22 /* SolarPoweredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarPoweredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57075291A09A7D400CE2C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A570752A1A09A7D400CE2C22 /* SolarPoweredTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SolarPoweredTests.m; sourceTree = "<group>"; };
+		A57075341A09A7FA00CE2C22 /* APIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIModel.h; sourceTree = "<group>"; };
+		A57075351A09A7FA00CE2C22 /* APIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIModel.m; sourceTree = "<group>"; };
+		A57075361A09A7FA00CE2C22 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A57075371A09A7FA00CE2C22 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A570753B1A09A80B00CE2C22 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		A570753C1A09A80B00CE2C22 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		A570753D1A09A80B00CE2C22 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		A57075411A09A81200CE2C22 /* resultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resultViewController.h; sourceTree = "<group>"; };
+		A57075421A09A81200CE2C22 /* resultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = resultViewController.m; sourceTree = "<group>"; };
+		A57075431A09A81200CE2C22 /* solarData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = solarData.m; sourceTree = "<group>"; };
+		A57075441A09A81200CE2C22 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A57075451A09A81200CE2C22 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A57075491A09A82400CE2C22 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A570754B1A09A89800CE2C22 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		A570754D1A09A89E00CE2C22 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A570754F1A09A8A500CE2C22 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A57075511A09A8AC00CE2C22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A57075531A09A8B800CE2C22 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A57075551A09A8C200CE2C22 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A57075571A09A8C900CE2C22 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A57075591A09A8D000CE2C22 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A570755B1A09A8D600CE2C22 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A570755D1A09A90400CE2C22 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A570755F1A09A90D00CE2C22 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A57075611A09AA4300CE2C22 /* solarData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = solarData.h; sourceTree = "<group>"; };
+		D96824071A0B510100EBCAF3 /* solar-panels1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solar-panels1.png"; sourceTree = "<group>"; };
+		D96824091A0B518200EBCAF3 /* solar-panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solar-panel.png"; sourceTree = "<group>"; };
+		D968240B1A0B51BD00EBCAF3 /* solar-panel2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solar-panel2.png"; sourceTree = "<group>"; };
+		D968240D1A0B51F800EBCAF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D968240F1A0B525100EBCAF3 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		D96824101A0B525100EBCAF3 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A57075081A09A7D400CE2C22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57075601A09A90D00CE2C22 /* Social.framework in Frameworks */,
+				A570755E1A09A90400CE2C22 /* SystemConfiguration.framework in Frameworks */,
+				A570755C1A09A8D600CE2C22 /* StoreKit.framework in Frameworks */,
+				A570755A1A09A8D000CE2C22 /* Security.framework in Frameworks */,
+				A57075581A09A8C900CE2C22 /* QuartzCore.framework in Frameworks */,
+				A57075561A09A8C200CE2C22 /* MobileCoreServices.framework in Frameworks */,
+				A57075541A09A8B800CE2C22 /* libz.dylib in Frameworks */,
+				A57075521A09A8AC00CE2C22 /* CoreLocation.framework in Frameworks */,
+				A57075501A09A8A500CE2C22 /* CoreGraphics.framework in Frameworks */,
+				A570754E1A09A89E00CE2C22 /* CFNetwork.framework in Frameworks */,
+				A570754C1A09A89800CE2C22 /* Accounts.framework in Frameworks */,
+				A57075401A09A80B00CE2C22 /* ParseFacebookUtils.framework in Frameworks */,
+				A570753F1A09A80B00CE2C22 /* Parse.framework in Frameworks */,
+				A570753E1A09A80B00CE2C22 /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A57075211A09A7D400CE2C22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A57075021A09A7D400CE2C22 = {
+			isa = PBXGroup;
+			children = (
+				A570755F1A09A90D00CE2C22 /* Social.framework */,
+				A570755D1A09A90400CE2C22 /* SystemConfiguration.framework */,
+				A570755B1A09A8D600CE2C22 /* StoreKit.framework */,
+				A57075591A09A8D000CE2C22 /* Security.framework */,
+				A57075571A09A8C900CE2C22 /* QuartzCore.framework */,
+				A57075551A09A8C200CE2C22 /* MobileCoreServices.framework */,
+				A57075531A09A8B800CE2C22 /* libz.dylib */,
+				A57075511A09A8AC00CE2C22 /* CoreLocation.framework */,
+				A570754F1A09A8A500CE2C22 /* CoreGraphics.framework */,
+				A570754D1A09A89E00CE2C22 /* CFNetwork.framework */,
+				A570754B1A09A89800CE2C22 /* Accounts.framework */,
+				A570750D1A09A7D400CE2C22 /* SolarPowered */,
+				A57075271A09A7D400CE2C22 /* SolarPoweredTests */,
+				A570750C1A09A7D400CE2C22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A570750C1A09A7D400CE2C22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A570750B1A09A7D400CE2C22 /* SolarPowered.app */,
+				A57075241A09A7D400CE2C22 /* SolarPoweredTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A570750D1A09A7D400CE2C22 /* SolarPowered */ = {
+			isa = PBXGroup;
+			children = (
+				A57075491A09A82400CE2C22 /* Main.storyboard */,
+				A57075411A09A81200CE2C22 /* resultViewController.h */,
+				A57075421A09A81200CE2C22 /* resultViewController.m */,
+				A57075431A09A81200CE2C22 /* solarData.m */,
+				A57075611A09AA4300CE2C22 /* solarData.h */,
+				A57075441A09A81200CE2C22 /* ViewController.h */,
+				A57075451A09A81200CE2C22 /* ViewController.m */,
+				A570753A1A09A80B00CE2C22 /* parse-library-1.4.1 */,
+				A57075341A09A7FA00CE2C22 /* APIModel.h */,
+				D968240D1A0B51F800EBCAF3 /* Images.xcassets */,
+				A57075351A09A7FA00CE2C22 /* APIModel.m */,
+				A57075361A09A7FA00CE2C22 /* AppDelegate.h */,
+				A57075371A09A7FA00CE2C22 /* AppDelegate.m */,
+				A570751D1A09A7D400CE2C22 /* LaunchScreen.xib */,
+				A570750E1A09A7D400CE2C22 /* Supporting Files */,
+			);
+			path = SolarPowered;
+			sourceTree = "<group>";
+		};
+		A570750E1A09A7D400CE2C22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D968240B1A0B51BD00EBCAF3 /* solar-panel2.png */,
+				D96824091A0B518200EBCAF3 /* solar-panel.png */,
+				D968240F1A0B525100EBCAF3 /* 3.png */,
+				D96824101A0B525100EBCAF3 /* 1.png */,
+				D96824071A0B510100EBCAF3 /* solar-panels1.png */,
+				A570750F1A09A7D400CE2C22 /* Info.plist */,
+				A57075101A09A7D400CE2C22 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A57075271A09A7D400CE2C22 /* SolarPoweredTests */ = {
+			isa = PBXGroup;
+			children = (
+				A570752A1A09A7D400CE2C22 /* SolarPoweredTests.m */,
+				A57075281A09A7D400CE2C22 /* Supporting Files */,
+			);
+			path = SolarPoweredTests;
+			sourceTree = "<group>";
+		};
+		A57075281A09A7D400CE2C22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A57075291A09A7D400CE2C22 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A570753A1A09A80B00CE2C22 /* parse-library-1.4.1 */ = {
+			isa = PBXGroup;
+			children = (
+				A570753B1A09A80B00CE2C22 /* Bolts.framework */,
+				A570753C1A09A80B00CE2C22 /* Parse.framework */,
+				A570753D1A09A80B00CE2C22 /* ParseFacebookUtils.framework */,
+			);
+			path = "parse-library-1.4.1";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A570750A1A09A7D400CE2C22 /* SolarPowered */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A570752E1A09A7D400CE2C22 /* Build configuration list for PBXNativeTarget "SolarPowered" */;
+			buildPhases = (
+				A57075071A09A7D400CE2C22 /* Sources */,
+				A57075081A09A7D400CE2C22 /* Frameworks */,
+				A57075091A09A7D400CE2C22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SolarPowered;
+			productName = SolarPowered;
+			productReference = A570750B1A09A7D400CE2C22 /* SolarPowered.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A57075231A09A7D400CE2C22 /* SolarPoweredTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A57075311A09A7D400CE2C22 /* Build configuration list for PBXNativeTarget "SolarPoweredTests" */;
+			buildPhases = (
+				A57075201A09A7D400CE2C22 /* Sources */,
+				A57075211A09A7D400CE2C22 /* Frameworks */,
+				A57075221A09A7D400CE2C22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A57075261A09A7D400CE2C22 /* PBXTargetDependency */,
+			);
+			name = SolarPoweredTests;
+			productName = SolarPoweredTests;
+			productReference = A57075241A09A7D400CE2C22 /* SolarPoweredTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A57075031A09A7D400CE2C22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = jkhart1;
+				TargetAttributes = {
+					A570750A1A09A7D400CE2C22 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					A57075231A09A7D400CE2C22 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = A570750A1A09A7D400CE2C22;
+					};
+				};
+			};
+			buildConfigurationList = A57075061A09A7D400CE2C22 /* Build configuration list for PBXProject "SolarPowered" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A57075021A09A7D400CE2C22;
+			productRefGroup = A570750C1A09A7D400CE2C22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A570750A1A09A7D400CE2C22 /* SolarPowered */,
+				A57075231A09A7D400CE2C22 /* SolarPoweredTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A57075091A09A7D400CE2C22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D968240A1A0B518200EBCAF3 /* solar-panel.png in Resources */,
+				D968240C1A0B51BD00EBCAF3 /* solar-panel2.png in Resources */,
+				A570754A1A09A82400CE2C22 /* Main.storyboard in Resources */,
+				D968240E1A0B51F800EBCAF3 /* Images.xcassets in Resources */,
+				A570751F1A09A7D400CE2C22 /* LaunchScreen.xib in Resources */,
+				D96824121A0B525100EBCAF3 /* 1.png in Resources */,
+				D96824111A0B525100EBCAF3 /* 3.png in Resources */,
+				D96824081A0B510100EBCAF3 /* solar-panels1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A57075221A09A7D400CE2C22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A57075071A09A7D400CE2C22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57075481A09A81200CE2C22 /* ViewController.m in Sources */,
+				A57075381A09A7FA00CE2C22 /* APIModel.m in Sources */,
+				A57075111A09A7D400CE2C22 /* main.m in Sources */,
+				A57075391A09A7FA00CE2C22 /* AppDelegate.m in Sources */,
+				A57075471A09A81200CE2C22 /* solarData.m in Sources */,
+				A57075461A09A81200CE2C22 /* resultViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A57075201A09A7D400CE2C22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A570752B1A09A7D400CE2C22 /* SolarPoweredTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A57075261A09A7D400CE2C22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A570750A1A09A7D400CE2C22 /* SolarPowered */;
+			targetProxy = A57075251A09A7D400CE2C22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A570751D1A09A7D400CE2C22 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A570751E1A09A7D400CE2C22 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A570752C1A09A7D400CE2C22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A570752D1A09A7D400CE2C22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A570752F1A09A7D400CE2C22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SolarPowered/parse-library-1.4.1",
+				);
+				INFOPLIST_FILE = SolarPowered/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A57075301A09A7D400CE2C22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SolarPowered/parse-library-1.4.1",
+				);
+				INFOPLIST_FILE = SolarPowered/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A57075321A09A7D400CE2C22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SolarPoweredTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolarPowered.app/SolarPowered";
+			};
+			name = Debug;
+		};
+		A57075331A09A7D400CE2C22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SolarPoweredTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolarPowered.app/SolarPowered";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A57075061A09A7D400CE2C22 /* Build configuration list for PBXProject "SolarPowered" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A570752C1A09A7D400CE2C22 /* Debug */,
+				A570752D1A09A7D400CE2C22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A570752E1A09A7D400CE2C22 /* Build configuration list for PBXNativeTarget "SolarPowered" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A570752F1A09A7D400CE2C22 /* Debug */,
+				A57075301A09A7D400CE2C22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A57075311A09A7D400CE2C22 /* Build configuration list for PBXNativeTarget "SolarPoweredTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A57075321A09A7D400CE2C22 /* Debug */,
+				A57075331A09A7D400CE2C22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A57075031A09A7D400CE2C22 /* Project object */;
+}
