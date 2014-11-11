@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "resultViewController.h"
 #import "solarData.h"
+
+int METERS_PER_MILE = 1609.344;
+
 @import CoreLocation;
 
 @interface ViewController ()<CLLocationManagerDelegate>
@@ -23,7 +26,19 @@
 
 NSArray *solar;
 
+
+
 @implementation ViewController
+
+- (void)updateMap:(CLLocation *)newLocation {
+    CLLocationCoordinate2D zoomLocation;
+    zoomLocation.latitude = newLocation.coordinate.latitude;
+    zoomLocation.longitude= newLocation.coordinate.longitude;
+    
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.5 * METERS_PER_MILE, 0.5 * METERS_PER_MILE);
+    
+    [self.mapView setRegion:viewRegion animated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -144,6 +159,8 @@ NSArray *solar;
     self.longitudeInfo = [NSNumber numberWithFloat:newLocation.coordinate.longitude];
     self.latitude.text =[ NSString stringWithFormat:@"%f",newLocation.coordinate.latitude ];
     self.longitude.text =[ NSString stringWithFormat:@"%f",newLocation.coordinate.longitude ];//longitude
+    
+    [self updateMap:newLocation];
 }
 
 
