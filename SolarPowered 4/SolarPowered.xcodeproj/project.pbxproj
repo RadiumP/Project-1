@@ -30,6 +30,8 @@
 		A570755C1A09A8D600CE2C22 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A570755B1A09A8D600CE2C22 /* StoreKit.framework */; };
 		A570755E1A09A90400CE2C22 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A570755D1A09A90400CE2C22 /* SystemConfiguration.framework */; };
 		A57075601A09A90D00CE2C22 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A570755F1A09A90D00CE2C22 /* Social.framework */; };
+		B5BD3A261A11B5E7005FBF1D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BD3A251A11B5E7005FBF1D /* MapKit.framework */; };
+		B5BD3A5D1A11C4BC005FBF1D /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BD3A5C1A11C4BC005FBF1D /* StatsViewController.m */; };
 		D96824081A0B510100EBCAF3 /* solar-panels1.png in Resources */ = {isa = PBXBuildFile; fileRef = D96824071A0B510100EBCAF3 /* solar-panels1.png */; };
 		D968240A1A0B518200EBCAF3 /* solar-panel.png in Resources */ = {isa = PBXBuildFile; fileRef = D96824091A0B518200EBCAF3 /* solar-panel.png */; };
 		D968240C1A0B51BD00EBCAF3 /* solar-panel2.png in Resources */ = {isa = PBXBuildFile; fileRef = D968240B1A0B51BD00EBCAF3 /* solar-panel2.png */; };
@@ -81,6 +83,9 @@
 		A570755D1A09A90400CE2C22 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A570755F1A09A90D00CE2C22 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		A57075611A09AA4300CE2C22 /* solarData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = solarData.h; sourceTree = "<group>"; };
+		B5BD3A251A11B5E7005FBF1D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B5BD3A5B1A11C4BC005FBF1D /* StatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsViewController.h; sourceTree = "<group>"; };
+		B5BD3A5C1A11C4BC005FBF1D /* StatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsViewController.m; sourceTree = "<group>"; };
 		D96824071A0B510100EBCAF3 /* solar-panels1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solar-panels1.png"; sourceTree = "<group>"; };
 		D96824091A0B518200EBCAF3 /* solar-panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solar-panel.png"; sourceTree = "<group>"; };
 		D968240B1A0B51BD00EBCAF3 /* solar-panel2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solar-panel2.png"; sourceTree = "<group>"; };
@@ -94,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BD3A261A11B5E7005FBF1D /* MapKit.framework in Frameworks */,
 				A57075601A09A90D00CE2C22 /* Social.framework in Frameworks */,
 				A570755E1A09A90400CE2C22 /* SystemConfiguration.framework in Frameworks */,
 				A570755C1A09A8D600CE2C22 /* StoreKit.framework in Frameworks */,
@@ -124,6 +130,7 @@
 		A57075021A09A7D400CE2C22 = {
 			isa = PBXGroup;
 			children = (
+				B5BD3A251A11B5E7005FBF1D /* MapKit.framework */,
 				A570755F1A09A90D00CE2C22 /* Social.framework */,
 				A570755D1A09A90400CE2C22 /* SystemConfiguration.framework */,
 				A570755B1A09A8D600CE2C22 /* StoreKit.framework */,
@@ -154,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				A57075491A09A82400CE2C22 /* Main.storyboard */,
+				B5BD3A5B1A11C4BC005FBF1D /* StatsViewController.h */,
+				B5BD3A5C1A11C4BC005FBF1D /* StatsViewController.m */,
 				A57075411A09A81200CE2C22 /* resultViewController.h */,
 				A57075421A09A81200CE2C22 /* resultViewController.m */,
 				A57075431A09A81200CE2C22 /* solarData.m */,
@@ -320,6 +329,7 @@
 			files = (
 				A57075481A09A81200CE2C22 /* ViewController.m in Sources */,
 				A57075381A09A7FA00CE2C22 /* APIModel.m in Sources */,
+				B5BD3A5D1A11C4BC005FBF1D /* StatsViewController.m in Sources */,
 				A57075111A09A7D400CE2C22 /* main.m in Sources */,
 				A57075391A09A7FA00CE2C22 /* AppDelegate.m in Sources */,
 				A57075471A09A81200CE2C22 /* solarData.m in Sources */,

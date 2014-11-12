@@ -14,7 +14,6 @@ resultViewController* result;
 
 @implementation resultViewController
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -113,6 +112,16 @@ resultViewController* result;
         result = [[resultViewController alloc] init];
     }
     return result;
+}
+- (IBAction)saveToParse:(id)sender {
+    
+    //Save total to Parse
+    NSString *total = [self.totalLabel text];
+    PFObject *transaction = [PFObject objectWithClassName:@"UserData"];
+    [transaction setObject:total forKey:@"amount"];
+    [transaction setObject:[[PFUser currentUser] username] forKey:@"user"];
+    //commit the new object to the parse database
+    [transaction save];
 }
 
 @end
