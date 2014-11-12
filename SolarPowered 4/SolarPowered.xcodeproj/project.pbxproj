@@ -18,7 +18,6 @@
 		A57075461A09A81200CE2C22 /* resultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57075421A09A81200CE2C22 /* resultViewController.m */; };
 		A57075471A09A81200CE2C22 /* solarData.m in Sources */ = {isa = PBXBuildFile; fileRef = A57075431A09A81200CE2C22 /* solarData.m */; };
 		A57075481A09A81200CE2C22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57075451A09A81200CE2C22 /* ViewController.m */; };
-		A570754A1A09A82400CE2C22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57075491A09A82400CE2C22 /* Main.storyboard */; };
 		A570754C1A09A89800CE2C22 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A570754B1A09A89800CE2C22 /* Accounts.framework */; };
 		A570754E1A09A89E00CE2C22 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A570754D1A09A89E00CE2C22 /* CFNetwork.framework */; };
 		A57075501A09A8A500CE2C22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A570754F1A09A8A500CE2C22 /* CoreGraphics.framework */; };
@@ -38,6 +37,7 @@
 		D968240E1A0B51F800EBCAF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D968240D1A0B51F800EBCAF3 /* Images.xcassets */; };
 		D96824111A0B525100EBCAF3 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D968240F1A0B525100EBCAF3 /* 3.png */; };
 		D96824121A0B525100EBCAF3 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D96824101A0B525100EBCAF3 /* 1.png */; };
+		D9BE81781A13EAE10087A7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BE817A1A13EAE10087A7B0 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,6 @@
 		A570750B1A09A7D400CE2C22 /* SolarPowered.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarPowered.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A570750F1A09A7D400CE2C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A57075101A09A7D400CE2C22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A570751E1A09A7D400CE2C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A57075241A09A7D400CE2C22 /* SolarPoweredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarPoweredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57075291A09A7D400CE2C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A570752A1A09A7D400CE2C22 /* SolarPoweredTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SolarPoweredTests.m; sourceTree = "<group>"; };
@@ -70,7 +69,6 @@
 		A57075431A09A81200CE2C22 /* solarData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = solarData.m; sourceTree = "<group>"; };
 		A57075441A09A81200CE2C22 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A57075451A09A81200CE2C22 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A57075491A09A82400CE2C22 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A570754B1A09A89800CE2C22 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		A570754D1A09A89E00CE2C22 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A570754F1A09A8A500CE2C22 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,6 +90,11 @@
 		D968240D1A0B51F800EBCAF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D968240F1A0B525100EBCAF3 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		D96824101A0B525100EBCAF3 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		D9BE817D1A13EB840087A7B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9BE817E1A13EB840087A7B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D9BE81801A13EB970087A7B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		D9BE81811A13EBA50087A7B0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		D9BE81821A13EBA50087A7B0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +163,7 @@
 		A570750D1A09A7D400CE2C22 /* SolarPowered */ = {
 			isa = PBXGroup;
 			children = (
-				A57075491A09A82400CE2C22 /* Main.storyboard */,
+				D9BE817A1A13EAE10087A7B0 /* Main.storyboard */,
 				B5BD3A5B1A11C4BC005FBF1D /* StatsViewController.h */,
 				B5BD3A5C1A11C4BC005FBF1D /* StatsViewController.m */,
 				A57075411A09A81200CE2C22 /* resultViewController.h */,
@@ -304,7 +307,7 @@
 			files = (
 				D968240A1A0B518200EBCAF3 /* solar-panel.png in Resources */,
 				D968240C1A0B51BD00EBCAF3 /* solar-panel2.png in Resources */,
-				A570754A1A09A82400CE2C22 /* Main.storyboard in Resources */,
+				D9BE81781A13EAE10087A7B0 /* Main.storyboard in Resources */,
 				D968240E1A0B51F800EBCAF3 /* Images.xcassets in Resources */,
 				A570751F1A09A7D400CE2C22 /* LaunchScreen.xib in Resources */,
 				D96824121A0B525100EBCAF3 /* 1.png in Resources */,
@@ -359,9 +362,20 @@
 		A570751D1A09A7D400CE2C22 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A570751E1A09A7D400CE2C22 /* Base */,
+				D9BE817E1A13EB840087A7B0 /* Base */,
+				D9BE81821A13EBA50087A7B0 /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		D9BE817A1A13EAE10087A7B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9BE817D1A13EB840087A7B0 /* Base */,
+				D9BE81801A13EB970087A7B0 /* en */,
+				D9BE81811A13EBA50087A7B0 /* zh-Hans */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

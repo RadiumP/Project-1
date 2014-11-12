@@ -1,0 +1,69 @@
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "1GT-Pm-rL9"; */
+"1GT-Pm-rL9.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "1Xy-HS-Ete"; */
+"1Xy-HS-Ete.text" = "Label";
+
+/* Class = "IBUILabel"; text = "$"; ObjectID = "AKi-LJ-XnO"; */
+"AKi-LJ-XnO.text" = "$";
+
+/* Class = "IBUILabel"; text = "Longitude"; ObjectID = "Hb3-iG-SXy"; */
+"Hb3-iG-SXy.text" = "Longitude";
+
+/* Class = "IBUIButton"; normalTitle = "Save total"; ObjectID = "HsY-ao-R9e"; */
+"HsY-ao-R9e.normalTitle" = "Save total";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "KMQ-OP-rsL"; */
+"KMQ-OP-rsL.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Solar It !"; ObjectID = "Ksp-C6-vaJ"; */
+"Ksp-C6-vaJ.normalTitle" = "Solar It !";
+
+/* Class = "IBUILabel"; text = "Estimated New Bill"; ObjectID = "Qhs-aY-AbI"; */
+"Qhs-aY-AbI.text" = "Estimated New Bill";
+
+/* Class = "IBUINavigationItem"; title = "Solar It!"; ObjectID = "RFW-jD-aA1"; */
+"RFW-jD-aA1.title" = "Solar It!";
+
+/* Class = "IBUILabel"; text = "Estimated Current Monthly Bill"; ObjectID = "V7u-GP-YIt"; */
+"V7u-GP-YIt.text" = "Estimated Current Monthly Bill";
+
+/* Class = "IBUILabel"; text = "$"; ObjectID = "ZJJ-vM-DsQ"; */
+"ZJJ-vM-DsQ.text" = "$";
+
+/* Class = "IBUILabel"; text = "Total Savings"; ObjectID = "ZWu-1x-072"; */
+"ZWu-1x-072.text" = "Total Savings";
+
+/* Class = "IBUILabel"; text = "$"; ObjectID = "bB9-FH-t4c"; */
+"bB9-FH-t4c.text" = "$";
+
+/* Class = "IBUILabel"; text = "Latitude"; ObjectID = "ep5-tb-gzN"; */
+"ep5-tb-gzN.text" = "Latitude";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "nX0-K0-7CL"; */
+"nX0-K0-7CL.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Amount of Solar Energy Generated"; ObjectID = "p8K-t5-OaY"; */
+"p8K-t5-OaY.text" = "Amount of Solar Energy Generated";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "pHn-M2-XnO"; */
+"pHn-M2-XnO.text" = "Label";
+
+/* Class = "IBUINavigationItem"; title = "Welcome"; ObjectID = "pk1-qa-dGj"; */
+"pk1-qa-dGj.title" = "Welcome";
+
+/* Class = "IBUILabel"; text = "Longitude"; ObjectID = "tYt-e6-sTS"; */
+"tYt-e6-sTS.text" = "Longitude";
+
+/* Class = "IBUILabel"; text = "Latitude"; ObjectID = "trx-gg-8jO"; */
+"trx-gg-8jO.text" = "Latitude";
+
+/* Class = "IBUILabel"; text = "Cost /kWh"; ObjectID = "w26-Aj-hJg"; */
+"w26-Aj-hJg.text" = "Cost /kWh";
+
+/* Class = "IBUIButton"; normalTitle = "View My Stats"; ObjectID = "xVt-Zg-uI6"; */
+"xVt-Zg-uI6.normalTitle" = "View My Stats";
+
+/* Class = "IBUIButton"; normalTitle = "Logout"; ObjectID = "zww-HB-8q2"; */
+"zww-HB-8q2.normalTitle" = "Logout";
