@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 #import <MapKit/MapKit.h>
-@interface ViewController : UIViewController<PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
+
+@interface ViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
 
 @property NSNumber *latitudeInfo;
 @property NSNumber *longitudeInfo;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (nonatomic, strong) NSMutableDictionary *latlongDict;
 
 @end
 

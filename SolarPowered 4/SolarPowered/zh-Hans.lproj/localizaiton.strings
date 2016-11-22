@@ -1,0 +1,9 @@
+/* 
+  localizaiton.strings
+  SolarPowered
+
+  Created by Young Lee on 12/2/14.
+  Copyright (c) 2014 jkhart1. All rights reserved.
+*/
+"If you would like specific results based on your estimated monthly energy usage in kWh and the area of solar panels in sq. ft., enter the information below and use the 'Use Inputs' option.  Otherwise, simply press 'Use Defaults' for data based on 400 sq. ft. of panels and 940 kWh / month." = "如果你可以填入自己的预估值，或者使用预设值";
+"Click below to go to your location." = "单击下方定位";

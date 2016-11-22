@@ -10,9 +10,9 @@
 #import "resultViewController.h"
 @import Foundation;
 
-@implementation solarData 
+@implementation solarData
 
-//-(id)initWithXMLDictionary:(NSDictionary *)dict//API stuff
+double METERS_PER_FOOT = 0.3048;
 
 NSString *solarAPIKey = @"m8WM4u44zrJJ3jo3vQgIai62kKblUn7fXRKqXbqE";
 NSString *solarBaseURL = @"http://developer.nrel.gov/api/solar/solar_resource/v1.xml?api_key=";
@@ -22,7 +22,7 @@ solarData *solarSelf;
 resultViewController* result;
 
 
-+(NSNumber*)getUtilityRates:(NSString*)lat longitude:(NSString*)lon
++(void)getUtilityRates:(NSString*)lat longitude:(NSString*)lon
 {
     if(!result)
     {
@@ -58,11 +58,11 @@ resultViewController* result;
     
     success = [utilityParser parse];
     
-    return solarSelf.utilityRate;
+    return;// solarSelf.utilityRate;
 }
 
 
-+(NSArray*)getSolarData:(NSString*)lat longitude:(NSString*)lon energyUsage:(NSNumber*)usage
++(NSArray*)getSolarData:(NSString*)lat longitude:(NSString*)lon energyUsage:(NSNumber*)usage area:(NSNumber*)panelArea
 {
     if(!result)
     {
@@ -79,7 +79,8 @@ resultViewController* result;
     NSString *solarURL = [NSString stringWithFormat:@"%@%@%@%@%@%@", solarBaseURL, solarAPIKey, @"&lat=", lat, @"&lon=", lon];
     
     // Get Utility Rates
-    NSNumber *utlityRate = [self getUtilityRates:lat longitude:lon];
+    //NSNumber *utlityRate =
+    [self getUtilityRates:lat longitude:lon];
     
     // Make API Call
     NSData *solarQuery = [NSData dataWithContentsOfURL:[NSURL URLWithString:solarURL]];
@@ -97,7 +98,8 @@ resultViewController* result;
     [solarParser parse];
     
     // Pass to calculation Function
-    solarSelf.solarDataArray = [self calculateSolar:solarSelf.utilityRate solEnergy: solarSelf.solarEnergy energyUsed:usage];
+    solarSelf.solarDataArray = [self calculateSolar:solarSelf.utilityRate solEnergy: solarSelf.solarEnergy energyUsed:usage
+        area:panelArea];
     
     
     // Put all relevant info in solarDataArray
@@ -105,7 +107,7 @@ resultViewController* result;
     return solarSelf.solarDataArray;
 }
 
-+(NSArray*)calculateSolar:(NSNumber*)utilityRate solEnergy:(NSNumber*)sol energyUsed:(NSNumber*)usage
++(NSArray*)calculateSolar:(NSNumber*)utilityRate solEnergy:(NSNumber*)sol energyUsed:(NSNumber*)usage area:(NSNumber*)panelArea
 {
     if(!solarSelf)
     {
@@ -121,7 +123,9 @@ resultViewController* result;
     // 100 sq ft ~= 9.29 sq meters
     // 400 sq ft ~= 37.16
     
-    solarGenerated = [NSNumber numberWithDouble:37.16 * 15 * sol.doubleValue * 0.75];
+    panelArea = [NSNumber numberWithDouble: METERS_PER_FOOT * panelArea.doubleValue];
+    
+    solarGenerated = [NSNumber numberWithDouble:panelArea.doubleValue * 15 * sol.doubleValue * 0.75];
     
     // cost of energy in area
         //[0] will be utilityRate

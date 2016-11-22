@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-
-@interface StatsViewController : UITableViewController
+#import "HistoryViewController.h"
+@interface StatsViewController : PFQueryTableViewController
 
 @end

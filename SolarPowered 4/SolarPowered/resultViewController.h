@@ -12,6 +12,7 @@
 @interface resultViewController : ViewController<NSXMLParserDelegate>
 @property NSNumber *latitude;
 @property NSNumber *longitude;
+@property NSString *zipCode;
 @property NSNumber *utilityRate;
 @property NSNumber *estMonthlyBill;
 @property NSNumber *energyUsedNew;
@@ -21,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *billnewLabel;
 @property (weak, nonatomic) IBOutlet UILabel *billLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
 +(resultViewController*)init;
 

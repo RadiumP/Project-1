@@ -14,23 +14,30 @@ resultViewController* result;
 
 @implementation resultViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-
     solar = [solarData init];
+    
+    UIImage *bgImage = [UIImage imageNamed: @"Background2.png"];       // load image
+    self.backgroundImageView = [[UIImageView alloc] initWithImage:bgImage];     // initialize image view with image
+    [self.backgroundImageView sizeToFit];                           // scale image to fit frame
+    self.backgroundImageView.contentMode = UIViewContentModeScaleAspectFit;
+    CGRect frame = self.backgroundImageView.frame;
+    float imgFactor = frame.size.height / frame.size.width;         // configure frame settings
+    frame.size.width = [[UIScreen mainScreen] bounds].size.width;
+    frame.size.height = frame.size.width * imgFactor;
+    self.backgroundImageView.frame = frame;
+    [self.view addSubview:self.backgroundImageView];            // add image view as subview to main view
+    [self.view sendSubviewToBack:self.backgroundImageView];     // send image to background so it doesn't cover objects
 
-
-    // Do any additional setup after loading the view, typically from a nib.
-    self.costLabel.text = [NSString stringWithFormat: @"%@",solar.solarDataArray[0]];
-   self.resultLabel.text = [NSString stringWithFormat: @"%@",solar.solarDataArray[2]];
-    self.billLabel.text = [NSString stringWithFormat: @"%@",solar.solarDataArray[1]];
-     self.billnewLabel.text = [NSString stringWithFormat: @"%@",solar.solarDataArray[3]];
-    double bill = [self.billLabel.text doubleValue];
-    double newbill = [self.billnewLabel.text doubleValue];
-    double save = bill - newbill;
-    self.totalLabel.text = [NSString stringWithFormat:@"%3f",save];
+    // display solar data
+    self.costLabel.text = [NSString stringWithFormat: @"$%.04f",[solar.solarDataArray[0] floatValue]];
+    self.resultLabel.text = [NSString stringWithFormat: @"%.02f kWh", [solar.solarDataArray[2] floatValue]];
+    self.billLabel.text = [NSString stringWithFormat: @"$%.02f", [solar.solarDataArray[1] floatValue]];
+    self.billnewLabel.text = [NSString stringWithFormat: @"$%.02f", [solar.solarDataArray[3] floatValue]];
+    self.totalLabel.text = [NSString stringWithFormat:@"$%.02f", [solar.solarDataArray[1] floatValue] - [solar.solarDataArray[3] floatValue]];
 }
-
 
 -(void)    parser: (NSXMLParser*) parser
   didStartElement: (NSString*) elementName
@@ -117,11 +124,31 @@ resultViewController* result;
     
     //Save total to Parse
     NSString *total = [self.totalLabel text];
-    PFObject *transaction = [PFObject objectWithClassName:@"UserData"];
-    [transaction setObject:total forKey:@"amount"];
-    [transaction setObject:[[PFUser currentUser] username] forKey:@"user"];
+    NSString *cost = [self.costLabel text];
+    NSString *result = [self.resultLabel text];
+    NSString *bill = [self.billLabel text];
+    NSString *billnew = [self.billnewLabel text];
+    
+    
+    PFObject *transaction = [PFObject objectWithClassName:[[PFUser currentUser] username]];
+    [transaction setObject:total forKey:@"save"];
+    [transaction setObject:result forKey:@"result"];
+    [transaction setObject:bill forKey:@"bill"];
+    [transaction setObject:billnew forKey:@"billnew"];
+    
+    //[transaction setObject:[[PFUser currentUser] username] forKey:@"user"];
+    [transaction setObject:cost forKey:@"cost"];
+    
+    
     //commit the new object to the parse database
     [transaction save];
+}
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"test"]) {
+               NSLog(@"a");
+    }
+    
 }
 
 @end

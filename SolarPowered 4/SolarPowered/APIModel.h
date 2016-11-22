@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface APIModel : NSObject
+
 //-(id)initWithXMLDictionary:(NSDictionary *)dict;
+
 @end

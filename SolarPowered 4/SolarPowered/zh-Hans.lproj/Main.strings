@@ -5,65 +5,138 @@
 /* Class = "IBUILabel"; text = "Label"; ObjectID = "1Xy-HS-Ete"; */
 "1Xy-HS-Ete.text" = "Label";
 
-/* Class = "IBUILabel"; text = "$"; ObjectID = "AKi-LJ-XnO"; */
-"AKi-LJ-XnO.text" = "$";
+/* Class = "IBUIButton"; normalTitle = "Locate Me!"; ObjectID = "21a-9G-2J1"; */
+"21a-9G-2J1.normalTitle" = "看我在哪!";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "433-95-CQI"; */
+"433-95-CQI.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "4Dz-6a-fzo"; */
+"4Dz-6a-fzo.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "938-Lr-D1f"; */
+"938-Lr-D1f.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Estimated Current Monthly Bill"; ObjectID = "Chc-rW-Mg6"; */
+"Chc-rW-Mg6.text" = "预计本月账单";
 
 /* Class = "IBUILabel"; text = "Longitude"; ObjectID = "Hb3-iG-SXy"; */
 "Hb3-iG-SXy.text" = "经度";
 
-/* Class = "IBUIButton"; normalTitle = "Save total"; ObjectID = "HsY-ao-R9e"; */
+/* Class = "IBUIButton"; normalTitle = "Save Total"; ObjectID = "HsY-ao-R9e"; */
 "HsY-ao-R9e.normalTitle" = "节省总数";
+
+/* Class = "IBUILabel"; text = "Automatically detecting coordinates..."; ObjectID = "Iy9-Ne-1HE"; */
+"Iy9-Ne-1HE.text" = "自动识别坐标...";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "JPn-CG-jfw"; */
+"JPn-CG-jfw.text" = "标题";
 
 /* Class = "IBUILabel"; text = "Label"; ObjectID = "KMQ-OP-rsL"; */
 "KMQ-OP-rsL.text" = "Label";
 
-/* Class = "IBUIButton"; normalTitle = "Solar It !"; ObjectID = "Ksp-C6-vaJ"; */
-"Ksp-C6-vaJ.normalTitle" = "太阳能行 !";
+/* Class = "IBUIButton"; normalTitle = "GO"; ObjectID = "Ksp-C6-vaJ"; */
+"Ksp-C6-vaJ.normalTitle" = "开始";
+
+/* Class = "IBUILabel"; text = "Not what you want? Try entering your own values!"; ObjectID = "KzH-J2-kFN"; */
+"KzH-J2-kFN.text" = "你不在这？填入你想的";
+
+/* Class = "IBUIButton"; normalTitle = "Use Inputs"; ObjectID = "Luz-XC-6KE"; */
+"Luz-XC-6KE.normalTitle" = "使用输入";
+
+/* Class = "IBUINavigationItem"; title = "Savings"; ObjectID = "PPS-2P-tWX"; */
+"PPS-2P-tWX.title" = "节省";
 
 /* Class = "IBUILabel"; text = "Estimated New Bill"; ObjectID = "Qhs-aY-AbI"; */
-"Qhs-aY-AbI.text" = "预估账单";
+"Qhs-aY-AbI.text" = "预计新账单";
 
-/* Class = "IBUINavigationItem"; title = "Solar It!"; ObjectID = "RFW-jD-aA1"; */
-"RFW-jD-aA1.title" = "太阳能行!";
+/* Class = "IBUINavigationItem"; title = "Solar Powered"; ObjectID = "RFW-jD-aA1"; */
+"RFW-jD-aA1.title" = "太阳能行";
+
+/* Class = "IBUILabel"; text = "ZIP Code:"; ObjectID = "RbM-PE-Kef"; */
+"RbM-PE-Kef.text" = "邮政编码:";
+
+/* Class = "IBUILabel"; text = "Monthly Usage:"; ObjectID = "URR-D7-H3X"; */
+"URR-D7-H3X.text" = "月用量:";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "USc-rh-vX5"; */
+"USc-rh-vX5.text" = "Label";
 
 /* Class = "IBUILabel"; text = "Estimated Current Monthly Bill"; ObjectID = "V7u-GP-YIt"; */
-"V7u-GP-YIt.text" = "预估每月账单";
+"V7u-GP-YIt.text" = "预计本月账单";
 
-/* Class = "IBUILabel"; text = "$"; ObjectID = "ZJJ-vM-DsQ"; */
-"ZJJ-vM-DsQ.text" = "$";
+/* Class = "IBUILabel"; text = "Detail"; ObjectID = "VSO-6i-4NR"; */
+"VSO-6i-4NR.text" = "详情";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "XyY-G3-1ce"; */
+"XyY-G3-1ce.text" = "Label";
+
+/* Class = "IBUINavigationItem"; title = "Solar Powered"; ObjectID = "Y3B-Zk-GGg"; */
+"Y3B-Zk-GGg.title" = "太阳能行";
 
 /* Class = "IBUILabel"; text = "Total Savings"; ObjectID = "ZWu-1x-072"; */
-"ZWu-1x-072.text" = "节省钱";
+"ZWu-1x-072.text" = "省钱";
 
-/* Class = "IBUILabel"; text = "$"; ObjectID = "bB9-FH-t4c"; */
-"bB9-FH-t4c.text" = "$";
+/* Class = "IBUINavigationItem"; title = "History"; ObjectID = "aHS-nf-fF1"; */
+"aHS-nf-fF1.title" = "历史记录";
+
+/* Class = "IBUITextView"; text = "If you would like specific results based on your estimated monthly energy usage in kWh and the area of solar panels in sq. ft., enter the information below and use the 'Use Inputs' option.  Otherwise, simply press 'Use Defaults' for data based on 400 sq. ft. of panels and 940 kWh / month."; ObjectID = "dPo-US-u3e"; */
+"dPo-US-u3e.text" = "如果你可以填入自己的预估值，或者使用预设值";
+
+
 
 /* Class = "IBUILabel"; text = "Latitude"; ObjectID = "ep5-tb-gzN"; */
 "ep5-tb-gzN.text" = "纬度";
 
+/* Class = "IBUIButton"; normalTitle = "Use Defaults"; ObjectID = "lIM-ah-OTy"; */
+"lIM-ah-OTy.normalTitle" = "使用预设";
+
+/* Class = "IBUILabel"; text = "Cost / kWh"; ObjectID = "mLH-yE-XUJ"; */
+"mLH-yE-XUJ.text" = "花费/每千瓦时";
+
+/* Class = "IBUILabel"; text = "Total Savings"; ObjectID = "mPy-4f-iV6"; */
+"mPy-4f-iV6.text" = "省钱";
+
 /* Class = "IBUILabel"; text = "Label"; ObjectID = "nX0-K0-7CL"; */
 "nX0-K0-7CL.text" = "Label";
 
+/* Class = "IBUILabel"; text = "Amount of Solar Energy Generated"; ObjectID = "obG-GZ-gU0"; */
+"obG-GZ-gU0.text" = "太阳能产量";
+
 /* Class = "IBUILabel"; text = "Amount of Solar Energy Generated"; ObjectID = "p8K-t5-OaY"; */
-"p8K-t5-OaY.text" = "太阳能产生量";
+"p8K-t5-OaY.text" = "太阳能产量";
 
 /* Class = "IBUILabel"; text = "Label"; ObjectID = "pHn-M2-XnO"; */
 "pHn-M2-XnO.text" = "Label";
 
-/* Class = "IBUINavigationItem"; title = "Welcome"; ObjectID = "pk1-qa-dGj"; */
-"pk1-qa-dGj.title" = "欢迎";
+/* Class = "IBUINavigationItem"; title = "Solar Powered"; ObjectID = "pk1-qa-dGj"; */
+"pk1-qa-dGj.title" = "太阳能行";
 
-/* Class = "IBUILabel"; text = "Longitude"; ObjectID = "tYt-e6-sTS"; */
-"tYt-e6-sTS.text" = "经度";
+/* Class = "IBUILabel"; text = "--"; ObjectID = "tYt-e6-sTS"; */
+"tYt-e6-sTS.text" = "--";
 
-/* Class = "IBUILabel"; text = "Latitude"; ObjectID = "trx-gg-8jO"; */
-"trx-gg-8jO.text" = "纬度";
+/* Class = "IBUILabel"; text = "Estimated New Bill"; ObjectID = "tf2-AP-Q5V"; */
+"tf2-AP-Q5V.text" = "预计新账单";
 
-/* Class = "IBUILabel"; text = "Cost /kWh"; ObjectID = "w26-Aj-hJg"; */
-"w26-Aj-hJg.text" = "花销 /千瓦时";
+/* Class = "IBUILabel"; text = "--"; ObjectID = "trx-gg-8jO"; */
+"trx-gg-8jO.text" = "--";
 
-/* Class = "IBUIButton"; normalTitle = "View My Stats"; ObjectID = "xVt-Zg-uI6"; */
+/* Class = "IBUILabel"; text = "Area of Panels:"; ObjectID = "ttu-Y7-Z36"; */
+"ttu-Y7-Z36.text" = "太阳能板面积:";
+
+/* Class = "IBUILabel"; text = "Cost / kWh"; ObjectID = "w26-Aj-hJg"; */
+"w26-Aj-hJg.text" = "花费/每千瓦时";
+
+/* Class = "IBUIButton"; normalTitle = "Saved Results"; ObjectID = "xVt-Zg-uI6"; */
 "xVt-Zg-uI6.normalTitle" = "历史记录";
+
+/* Class = "IBUILabel"; text = "00000"; ObjectID = "yhK-s5-ZsT"; */
+"yhK-s5-ZsT.text" = "00000";
+
+/* Class = "IBUILabel"; text = "ZIP Code"; ObjectID = "zY1-ks-e79"; */
+"zY1-ks-e79.text" = "邮政编码";
 
 /* Class = "IBUIButton"; normalTitle = "Logout"; ObjectID = "zww-HB-8q2"; */
 "zww-HB-8q2.normalTitle" = "登出";
+
+

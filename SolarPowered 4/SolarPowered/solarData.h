@@ -12,11 +12,11 @@
 
 //-(id)initWithXMLDictionary:(NSDictionary *)dict;
 
-+(NSArray*)getSolarData:(NSString*)lat longitude:(NSString*)lon energyUsage:(NSNumber*)usage;
++(NSArray*)getSolarData:(NSString*)lat longitude:(NSString*)lon energyUsage:(NSNumber*)usage area:(NSNumber*)panelArea;
 
-+(NSNumber*)getUtilityRates:(NSString*)lat longitude:(NSString*)lon;
++(void)getUtilityRates:(NSString*)lat longitude:(NSString*)lon;
 
-+(NSArray*)calculateSolar:(NSNumber*)utilityRate solEnergy:(NSNumber*)sol energyUsed:(NSNumber*)usage;
++(NSArray*)calculateSolar:(NSNumber*)utilityRate solEnergy:(NSNumber*)sol energyUsed:(NSNumber*)usage area:(NSNumber*)panelArea;
 
 +(solarData*)init;
 
